@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewLocation">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textColor="#664FA3"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/locationName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.802" />
+
+    <EditText
+        android:id="@+id/locationName"
+        android:layout_width="357dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Location Name"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/locationAddress"
+        app:layout_constraintEnd_toEndOf="@+id/locationAddress"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/locationAddress" />
+
+    <EditText
+        android:id="@+id/locationAddress"
+        android:layout_width="357dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Location Addresss"
+        android:inputType="textPostalAddress"
+        app:layout_constraintBottom_toTopOf="@+id/country"
+        app:layout_constraintEnd_toEndOf="@+id/country"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/country" />
+
+    <EditText
+        android:id="@+id/country"
+        android:layout_width="357dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Country"
+        android:inputType="text"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/gpsX"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/gpsX"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="24dp"
+        android:hint="GPS X-Coordinate"
+        app:layout_constraintBottom_toTopOf="@+id/dateVisited"
+        app:layout_constraintEnd_toStartOf="@+id/gpsY"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/gpsY"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="24dp"
+        android:hint="GPS Y-Coordinate"
+        app:layout_constraintBottom_toTopOf="@+id/dateVisited"
+        app:layout_constraintEnd_toStartOf="@+id/populateGPSButton" />
+
+    <TextView
+        android:id="@+id/dateVisited"
+        android:layout_width="169dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Date Visited"
+        android:inputType="date"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/rating"
+        app:layout_constraintEnd_toStartOf="@+id/visitDate" />
+
+    <Button
+        android:id="@+id/submitLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Location"
+        app:layout_constraintBottom_toTopOf="@+id/Discard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/visitDate"
+        android:layout_width="169dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="16dp"
+        android:text="Select date"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar2"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar2" />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="128dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="28dp"
+        android:text="@string/rating"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/submitLocation"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:max="9"
+        android:progress="3"
+        app:layout_constraintBottom_toTopOf="@+id/submitLocation"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/Discard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:onClick="onClickGoBack"
+        android:text="Discard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ratingValue"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/rating"
+        app:layout_constraintEnd_toEndOf="@+id/rating"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="@+id/rating"
+        app:layout_constraintTop_toTopOf="@+id/rating"
+        app:layout_constraintVertical_bias="0.964" />
+
+    <!-- Use the clipart -->
+
+    <ImageButton
+        android:id="@+id/populateGPSButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Get Current Location"
+        android:padding="10dp"
+        android:src="@drawable/ic_gps"
+        app:layout_constraintBottom_toBottomOf="@+id/gpsY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/country"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/autofill"
+        android:layout_width="39dp"
+        android:layout_height="17dp"
+        android:layout_marginBottom="24dp"
+        android:text="  autofill"
+        android:textAlignment="center"
+        android:textSize="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/visitDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

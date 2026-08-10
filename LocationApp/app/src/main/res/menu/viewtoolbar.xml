@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_spinner"
+        android:title="Select"
+        android:icon="@drawable/ic_accessible"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/menu_item_dropdown"
+        android:icon="@drawable/ic_accessible"
+        android:title="Accessibility"
+        app:showAsAction="always" />
+
+
+</menu>

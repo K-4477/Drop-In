@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="default_font_color">#000000</color>
+    <color name="protanopia_font_color">#0000FF</color>
+    <color name="deuteranopia_font_color">#FF00FF</color>
+    <color name="tritanopia_font_color">#00FFFF</color>
+</resources>
