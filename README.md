@@ -326,7 +326,7 @@ A particularly interesting future feature would be attaching **photos or videos 
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/drop-in.git
+git clone https://github.com/K-4477/Drop-In.git
 ```
 
 Open the project in Android Studio and allow Gradle to synchronise.
