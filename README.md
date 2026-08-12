@@ -381,7 +381,7 @@ Rather than focusing on one isolated Android feature, the project provided exper
 
 ## 👨‍💻 Developer
 
-**[Your Name]**
+**Kush**
 
 I'm a software development enthusiast building practical projects to develop my skills in application development, databases, problem solving and software engineering.
 
