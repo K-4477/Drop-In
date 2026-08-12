@@ -389,8 +389,8 @@ I'm particularly interested in continuing to develop my skills in **Android deve
 
 ### Connect with me
 
-* GitHub: `https://github.com/YOUR-USERNAME`
-* LinkedIn: `https://linkedin.com/in/YOUR-PROFILE`
+* GitHub: `https://github.com/K-4477`
+* LinkedIn: `https://linkedin.com/in/kushmodha8`
 
 ---
 
