@@ -66,7 +66,7 @@ The application was specifically designed with accessibility and ease of navigat
 
 The main screen provides straightforward navigation to either view saved locations or create a new location.
 
-![Drop In Home Screen](screenshots/home-screen.png)
+![Drop In Home Screen](/DropIn.png)
 
 ---
 
@@ -74,7 +74,7 @@ The main screen provides straightforward navigation to either view saved locatio
 
 The location form allows users to enter information about a place, automatically retrieve GPS coordinates, select a visit date and assign a rating.
 
-![Drop In Location Form](screenshots/location-form.png)
+![Drop In Location Form](/LocationForm.png)
 
 ---
 
@@ -82,7 +82,7 @@ The location form allows users to enter information about a place, automatically
 
 An interactive date picker allows users to select the date they visited a location using a calendar interface rather than manually entering a date.
 
-![Drop In Date Picker](screenshots/date-picker.png)
+![Drop In Date Picker](/Date.png)
 
 ---
 
@@ -92,7 +92,34 @@ Saved entries are displayed with their stored information, while the sorting con
 
 The accessibility control is also available from the toolbar.
 
-![Drop In Saved Locations](screenshots/saved-locations.png)
+![Drop In Saved Locations](/SavedLocations.png)
+
+---
+
+### Accessibility
+
+The Saved Locations screen includes an accessibility control that allows users to change the colour scheme of the displayed information.
+
+The application supports multiple colour-vision modes:
+
+* Default
+* Protanopia
+* Deuteranopia
+* Tritanopia
+
+The button allows users to cycle through the available modes and select the option that provides the clearest display for them.
+
+![Drop In Accessibility Display](/Accessibility.png)
+
+---
+
+### Updating an Existing Location
+
+Drop In also supports updating information for an existing saved location.
+
+Users can select an existing location and modify its stored information before saving the changes back to the database.
+
+![Drop In Updating an Existing Location](/UpdateExisting.png)
 
 ---
 
